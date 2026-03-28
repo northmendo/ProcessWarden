@@ -66,21 +66,19 @@ This repository is the official distribution channel for signed Process Warden A
 - The app includes an in-app `Deactivate This Device` action plus a Polar customer-portal link.
 
 ## Screenshots
-### Apps Tab
-![Apps Tab](docs/images/screenshot-apps.jpg)
+| Apps Tab | App Actions |
+| --- | --- |
+| ![Apps Tab](docs/images/screenshot-apps.jpg) | ![App Actions](docs/images/screenshot-apps-actions.jpg) |
 
-### App Actions
-![App Actions](docs/images/screenshot-apps-actions.jpg)
-
-### Automation Tab
-![Automation Tab](docs/images/screenshot-automation.jpg)
-
-### Settings Tab
-![Settings Tab](docs/images/screenshot-settings.jpg)
+| Automation Tab | Settings Tab |
+| --- | --- |
+| ![Automation Tab](docs/images/screenshot-automation.jpg) | ![Settings Tab](docs/images/screenshot-settings.jpg) |
 
 ## Support
 - License and billing support: https://polar.sh/northmendo-tech-services/portal
 - Product distribution and release history: this repository's Releases page
+
+
 
 
 
