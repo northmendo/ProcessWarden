@@ -24,8 +24,7 @@ This repository is the official distribution channel for signed Process Warden A
 - Modern Kotlin + Compose rewrite.
 - In-app language selection with `Auto` follow-system behavior.
 - Shipped Simplified Chinese and Brazilian Portuguese support.
-- Temporary Restriction Lift automation for scheduled restriction windows.
-- Stronger premium gating across widget, shortcut, tiles, automation receiver, and background workers.
+- Temporary Restriction Lift automation: let selected restricted apps run for a set amount of time on a repeating schedule, then automatically restore their restrictions.
 - Safer backup/import behavior and a cleaner Appzuku migration path.
 
 ## Core Features
@@ -82,5 +81,6 @@ This repository is the official distribution channel for signed Process Warden A
 ## Support
 - License and billing support: https://polar.sh/northmendo-tech-services/portal
 - Product distribution and release history: this repository's Releases page
+
 
 
