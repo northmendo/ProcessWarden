@@ -1,11 +1,11 @@
-{
-  "appId": "com.northmendo.processwarden",
-  "channel": "stable",
-  "versionName": "0.6.0",
-  "versionCode": 26,
-  "releaseTag": "v0.6.0",
-  "publishedAt": "",
-  "apkName": "ProcessWarden-0.6.0.apk",
-  "apkDownloadUrl": "",
-  "apkSha256": "7E592E52BB90A6E1ED7D57CB82100AFC403AC4F7E4169D0C89CB31B3B1F344F7"
+﻿{
+    "appId":  "com.northmendo.processwarden",
+    "channel":  "stable",
+    "versionName":  "0.6.0",
+    "versionCode":  26,
+    "releaseTag":  "v0.6.0",
+    "publishedAt":  "2026-03-28T01:57:26Z",
+    "apkName":  "ProcessWarden-0.6.0.apk",
+    "apkDownloadUrl":  "https://github.com/northmendo/ProcessWarden/releases/download/v0.6.0/ProcessWarden-0.6.0.apk",
+    "apkSha256":  "7E592E52BB90A6E1ED7D57CB82100AFC403AC4F7E4169D0C89CB31B3B1F344F7"
 }
