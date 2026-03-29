@@ -2,19 +2,17 @@
 
 # Process Warden
 
-Process Warden is a premium Android utility for force-stop workflows, automation, and background restriction management. It is the maintained successor to Appzuku: same core idea, cleaner architecture, stronger automation, proper licensing, OTA updates, and a modern Kotlin + Compose UI.
+Process Warden is a premium Android utility for force-stop workflows, automation, and background restriction management. It is the maintained successor to Appzuku, with the same core purpose rebuilt around stronger automation, proper licensing, OTA updates, and a modern Kotlin + Compose UI.
 
 This app is built for Android power users who already understand Shizuku or root access and want direct control over misbehaving apps, repeatable cleanup, and restriction enforcement.
 
 ## Before You Buy
 
 - You need Root or Shizuku for kill actions and background restriction features.
-- The app is license-gated through Polar, and after a successful validation it can be used offline for up to 14 days before it needs to reconnect and confirm the license again.
-- Refunds are handled case by case, but are generally not offered because the checkout flow includes a trial period when available.
-- Process Warden is actively developed. I test every release, but occasional bugs can still happen.
-- Older known-good releases stay on GitHub so you can roll back if you need to.
-- The home-screen shortcut kills the app you were just in, not the launcher itself.
-- If you do not already know whether this app fits your setup, read the requirements section before buying.
+- The app is license-gated through Polar and can be used offline for up to 14 days after a successful validation before it needs to reconnect and confirm the license again.
+- Refunds are handled case by case, but are generally not offered because the checkout flow includes a trial period.
+- Process Warden is actively developed, and older known-good releases stay on GitHub if you ever need to roll back.
+- Check the requirements section if you are not sure whether it fits your setup.
 
 For more buyer-focused questions, see the [FAQ](FAQ.md).
 
@@ -43,7 +41,7 @@ The goal is not to imitate a generic task killer. The goal is predictable contro
 
 ## Why It Exists
 
-Appzuku proved the core demand. A lot of users wanted direct, scriptable control over force-stop and restriction workflows, but the original app had clear limits.
+Appzuku proved the core demand. Users wanted direct, scriptable control over force-stop and restriction workflows, but the original app had clear limits.
 
 Process Warden is the follow-through:
 - rebuilt as a maintained Kotlin + Compose codebase
