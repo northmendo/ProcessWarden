@@ -6,6 +6,16 @@ Process Warden is a premium Android utility for force-stop workflows, automation
 
 This app is built for Android power users who already understand Shizuku or root access and want direct control over misbehaving apps, repeatable cleanup, and restriction enforcement.
 
+## Screenshots
+
+| Apps Tab | App Actions |
+| --- | --- |
+| ![Apps Tab](docs/images/screenshot-apps.jpg) | ![App Actions](docs/images/screenshot-apps-actions.jpg) |
+
+| Automation Tab | Settings Tab |
+| --- | --- |
+| ![Automation Tab](docs/images/screenshot-automation.jpg) | ![Settings Tab](docs/images/screenshot-settings.jpg) |
+
 ## What Process Warden Is For
 
 Android exposes just enough process control to be frustrating. Process Warden closes that gap.
@@ -159,16 +169,6 @@ Rules:
 - `status`
 - `message`
 - `package_name`
-
-## Screenshots
-
-| Apps Tab | App Actions |
-| --- | --- |
-| ![Apps Tab](docs/images/screenshot-apps.jpg) | ![App Actions](docs/images/screenshot-apps-actions.jpg) |
-
-| Automation Tab | Settings Tab |
-| --- | --- |
-| ![Automation Tab](docs/images/screenshot-automation.jpg) | ![Settings Tab](docs/images/screenshot-settings.jpg) |
 
 ## Localization Notes
 
