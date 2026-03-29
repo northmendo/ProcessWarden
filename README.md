@@ -6,6 +6,18 @@ Process Warden is a premium Android utility for force-stop workflows, automation
 
 This app is built for Android power users who already understand Shizuku or root access and want direct control over misbehaving apps, repeatable cleanup, and restriction enforcement.
 
+## Before You Buy
+
+- You need Root or Shizuku for kill actions and background restriction features.
+- The app is license-gated through Polar, and offline use works for up to 14 days after a successful validation.
+- Refunds are handled case by case, but are generally not offered because the checkout flow includes a trial period when available.
+- Process Warden is actively developed. I test every release, but occasional bugs can still happen.
+- Older known-good releases stay on GitHub so you can roll back if you need to.
+- The home-screen shortcut kills the app you were just in, not the launcher itself.
+- If you do not already know whether this app fits your setup, read the requirements section before buying.
+
+For more buyer-focused questions, see the [FAQ](FAQ.md).
+
 ## Screenshots
 
 | Apps Tab | App Actions |
