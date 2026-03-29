@@ -95,13 +95,11 @@ Process Warden is the follow-through:
 
 ### Premium, Licensing, and Updates
 - First-run paywall with EULA review.
-- Polar checkout handoff and license-key activation.
-- Dedicated handling for activation-capacity exhaustion and recovery.
+- Buy or start a trial through Polar, then activate the app with your license key.
 - Retrieve an existing license through the Polar portal.
-- Deactivate the current device from Settings.
-- Cached local premium access with offline grace handling.
-- OTA checks and APK downloads from `northmendo/ProcessWarden` through GitHub Releases.
-- Install-ready notifications and in-app install handoff when an update finishes downloading.
+- Deactivate the current device from Settings when you want to move to another device.
+- Use the app offline for up to 14 days after a successful license check.
+- Check for updates, download the latest APK, and install it from inside the app.
 
 ### Backup, Migration, and Diagnostics
 - Export and import Process Warden backups.
@@ -186,12 +184,6 @@ Rules:
 - App strings live under `app/src/main/res/values-xx/strings.xml`.
 - Localized EULA assets live under `app/src/main/res/raw-xx/process_warden_eula.txt`.
 - Translation workflow notes live in [docs/translations.md](docs/translations.md).
-
-## Build
-
-```powershell
-.\gradlew.bat assembleDebug --no-daemon
-```
 
 ## License
 
