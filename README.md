@@ -9,7 +9,7 @@ This app is built for Android power users who already understand Shizuku or root
 ## Before You Buy
 
 - You need Root or Shizuku for kill actions and background restriction features.
-- The app is license-gated through Polar, and offline use works for up to 14 days after a successful validation.
+- The app is license-gated through Polar, and after a successful validation it can be used offline for up to 14 days before it needs to reconnect and confirm the license again.
 - Refunds are handled case by case, but are generally not offered because the checkout flow includes a trial period when available.
 - Process Warden is actively developed. I test every release, but occasional bugs can still happen.
 - Older known-good releases stay on GitHub so you can roll back if you need to.
