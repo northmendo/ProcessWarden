@@ -2,130 +2,102 @@
 
 # Process Warden
 
-Process Warden is a premium Android utility for force-stop workflows, automation, and background restriction management. It is the maintained successor to Appzuku, with the same core purpose rebuilt around stronger automation, proper licensing, OTA updates, and a modern Kotlin + Compose UI.
-
-This app is built for Android power users who already understand Shizuku or root access and want direct control over misbehaving apps, repeatable cleanup, and restriction enforcement.
+Process Warden is a premium Android utility for force-stop workflows, automation, and background restriction management. It is the maintained successor to Appzuku, built for users who want deliberate control over app state instead of generic one-tap cleanup.
 
 ## Before You Buy
 
-- You need Root or Shizuku for kill actions and background restriction features.
-- The app is license-gated through Polar and can be used offline for up to 14 days after a successful validation before it needs to reconnect and confirm the license again.
-- Refunds are handled case by case, but are generally not offered because the checkout flow includes a trial period.
-- Process Warden is actively developed, and older known-good releases stay on GitHub if you ever need to roll back.
-- Check the requirements section if you are not sure whether it fits your setup.
+- This app is for Android power users who already know why they want Root or Shizuku.
+- Root or Shizuku is required for the kill and background-restriction features that define the app.
+- Process Warden is a paid, licensed product using Polar.
+- After a successful validation, the app can keep working offline for up to 14 days before it needs to check the license again.
+- Refunds are handled case by case, but are generally not offered because the checkout flow includes a 3-day trial period before any charges are applied.
+- Older known-good releases remain on GitHub if you ever need to roll back.
 
-For more buyer-focused questions, see the [FAQ](FAQ.md).
+If you are unsure whether this fits your setup, read the [FAQ](FAQ.md) before buying.
+
+If you already installed it and want the full walkthrough, use the in-app guides under `Help & Links`, including `How Process Warden works` and `App Tour`.
 
 ## Screenshots
 
 | Apps Tab | App Actions |
 | --- | --- |
-| ![Apps Tab](docs/images/screenshot-apps.jpg) | ![App Actions](docs/images/screenshot-apps-actions.jpg) |
+| <img src="docs/images/screenshot-apps.jpg" alt="Apps Tab" width="540"> | <img src="docs/images/screenshot-apps-actions.jpg" alt="App Actions" width="540"> |
 
 | Automation Tab | Settings Tab |
 | --- | --- |
-| ![Automation Tab](docs/images/screenshot-automation.jpg) | ![Settings Tab](docs/images/screenshot-settings.jpg) |
+| <img src="docs/images/screenshot-automation.jpg" alt="Automation Tab" width="540"> | <img src="docs/images/screenshot-settings.jpg" alt="Settings Tab" width="540"> |
 
-## What Process Warden Is For
+## What It Does
 
-Android exposes just enough process control to be frustrating. Process Warden closes that gap.
+Process Warden gives you repeatable control over apps that are noisy, greedy, or better kept asleep when you are not using them.
 
-It gives you a single place to:
-- kill the current foreground app or selected running apps
-- automate cleanup on a schedule, on screen-off, or under RAM pressure
-- save and reapply Android background restrictions
-- temporarily lift those restrictions on a repeatable schedule
-- monitor what the app did through history, logs, and status messaging
+It also includes a reusable in-app help guide and onboarding tour so first-time users can learn the main flows without hunting through menus.
 
-The goal is not to imitate a generic task killer. The goal is predictable control over app state, with automation and restriction tooling that stays usable over time.
+You can use it to:
 
-## Why It Exists
+- kill the current foreground app or selected apps from one place
+- automate cleanup on a timer, on screen-off, or when RAM pressure crosses your threshold
+- save and reapply Android background restrictions instead of rebuilding the same setup over and over
+- temporarily lift those restrictions for selected apps, then restore them automatically on a schedule or with screen-on and screen-off triggers
+- track what happened through history, logs, status, and update messaging
 
-Appzuku proved the core demand. Users wanted direct, scriptable control over force-stop and restriction workflows, but the original app had clear limits.
-
-Process Warden is the follow-through:
-- rebuilt as a maintained Kotlin + Compose codebase
-- structured as a premium product instead of an experimental utility
-- designed around reliable automation, diagnostics, licensing, and update delivery
-- expanded to handle background restrictions and temporary exception windows, not just killing apps
-
-## Highlights
-
-- Foreground-app kill from a launcher shortcut, Quick Settings tile, or widget
-- Manual multi-app kill from the Apps tab
-- Configurable background cleanup with whitelist and blacklist targeting
-- Saved background restriction set with apply, reapply, verify, and repair flows
-- Temporary Restriction Lift that restores restrictions automatically after a defined window
-- Premium licensing with Polar checkout, key activation, deactivation, and offline grace handling
-- In-app OTA update checks and installs through GitHub Releases
-- External automation API for tools like Tasker and MacroDroid
-- Localized UI and EULA support with in-app language switching
-
-## Feature Overview
+## Key Features
 
 ### App Control
-- Kill a single app or multiple selected apps from the Apps tab.
-- Kill the current foreground app from the launcher shortcut, Quick Settings tile, or widget.
-- Run a configured background-kill action from the secondary Quick Settings tile.
-- Search, sort, and filter running apps with optional system-app and persistent-app visibility.
-- Use per-app actions for kill, whitelist, blacklist, hide, background restriction, app info, and uninstall.
+
+- Kill one app, several selected apps, or the app you were just using.
+- Use the Apps tab, launcher shortcut, Quick Settings tile, or widget depending on how you work.
+- Search, sort, and multi-select running apps without the list jumping around.
+- Keep direct visibility controls for system and persistent apps in the same Apps surface.
 
 ### Automation
-- Enable or disable automation globally.
-- Run cleanup periodically with intervals ranging from short service-driven runs to longer WorkManager-backed runs.
-- Trigger cleanup on screen-off.
-- Gate cleanup behind a RAM threshold.
-- Restore automation state after boot.
-- Reapply active automation state when the app reopens.
+
+- Run cleanup periodically, on screen-off, or only when RAM use crosses your threshold.
+- Choose whitelist or blacklist behavior for background cleanup.
+- Restore automation state after reboot and reopen.
 
 ### Background Restrictions
-- Save the exact app set that should remain background-restricted.
-- Apply restrictions immediately.
-- Reapply them later without rebuilding the list.
-- Verify restriction drift and repair it.
-- View and clear a restriction log inside the app.
-- Handle out-of-sync or externally changed restriction state with explicit prompts instead of silent failure.
+
+- Keep a saved list of apps that should stay background-restricted.
+- Apply, reapply, verify, and repair restriction state without rebuilding the list.
+- Handle drift and externally changed state through explicit prompts instead of silent failure.
 
 ### Temporary Restriction Lift
-- Choose a separate list of apps that can be temporarily exempted from restrictions.
-- Configure a lift duration and repeat interval.
-- Restore restrictions automatically when the lift window ends.
-- Reconcile lift state after boot or missed transitions.
+
+- Keep a separate target list for apps that need short exception windows.
+- Lift restrictions on a timed schedule or while the screen is on, then restore them automatically.
 - Prevent lifted apps from being immediately re-restricted or auto-killed while the lift is active.
 
-### Premium, Licensing, and Updates
-- First-run paywall with EULA review.
-- Buy or start a trial through Polar, then activate the app with your license key.
-- Retrieve an existing license through the Polar portal.
-- Deactivate the current device from Settings when you want to move to another device.
-- Use the app offline for up to 14 days after a successful license check.
-- Check for updates, download the latest APK, and install it from inside the app.
+### Updates and Backups
 
-### Backup, Migration, and Diagnostics
-- Export and import Process Warden backups.
-- Import legacy Appzuku backups.
-- Preserve durable settings while keeping the automation auth token out of backups.
-- View kill history and top offenders.
-- Open built-in help content from the app.
-- Track current status through clear toast and settings messaging.
+- Check for app updates and install new APKs from inside the app.
+- Export Process Warden backups and import either Process Warden or legacy Appzuku backups.
 
-### Appearance and Localization
-- System, light, and dark theme modes.
-- Adjustable accent, chrome, separator, and text colors.
-- Full color picker with preview and hex input.
-- `Auto` language mode plus English, Simplified Chinese, and Brazilian Portuguese.
-- Locale-specific EULA loading when a translated EULA is available.
+### Licensing
+
+- Process Warden uses Polar for checkout and license management.
+- Users can manage their own licenses through the portal.
+- Users can activate and deactivate licenses on their own devices whenever they want.
+- You can also retrieve an existing license from inside the app during activation.
+
+### Appearance and Language
+
+- Choose system, light, or dark theme behavior.
+- Change accent, chrome, separator, and text colors.
+- Use `Auto` language mode or switch the app to English, Simplified Chinese, or Brazilian Portuguese.
 
 ## Requirements
 
 - Android 6.0 or newer to run the app
 - Android 11 or newer for the background restriction workflow
-- Shizuku or root for kill and restriction operations
+- Root or Shizuku for kill and restriction operations
 - Internet access for:
   - first license validation
   - periodic license revalidation
   - Polar portal access
-  - OTA update checks
+  - update checks
+- Notification Access for:
+  - update notifications
 
 ## Installation and First Run
 
@@ -135,56 +107,23 @@ Process Warden is the follow-through:
 4. Review and accept the EULA.
 5. Start checkout through Polar, retrieve your license, or paste an existing key.
 6. Activate the license on the device.
-7. Grant Shizuku or root access if you want kill and restriction actions to function.
+7. Grant Root or Shizuku access if you want the core kill and restriction features to function.
 
-## External Automation API
+On first launch, Process Warden can show a short onboarding tour. You can replay it later from Settings under `Help & Links`.
 
-Process Warden exposes a broadcast receiver for automation tools such as Tasker and MacroDroid.
+## Automation and Integrations
 
-Rules:
-- The receiver must be enabled in Settings.
-- Every request requires a valid `auth_token`.
-- Premium access is required.
-- Results are returned through a separate broadcast.
+Process Warden can integrate with automation tools such as Tasker and MacroDroid.
 
-### Supported Actions
+- Integration support is premium-only.
+- It must be enabled in Settings before other apps can use it.
+- The public README intentionally stays at the capability level rather than documenting the full command contract.
 
-- `com.northmendo.processwarden.action.KILL_FOREGROUND_APP`
-- `com.northmendo.processwarden.action.KILL_PACKAGE`
-- `com.northmendo.processwarden.action.RUN_BACKGROUND_KILL`
-- `com.northmendo.processwarden.action.SET_AUTOMATION_ENABLED`
-- `com.northmendo.processwarden.action.SET_PERIODIC_KILL_ENABLED`
-- `com.northmendo.processwarden.action.SET_SCREEN_OFF_KILL_ENABLED`
-- `com.northmendo.processwarden.action.SET_BACKGROUND_RESTRICTION`
-- `com.northmendo.processwarden.action.REAPPLY_BACKGROUND_RESTRICTIONS`
-- `com.northmendo.processwarden.action.VERIFY_BACKGROUND_RESTRICTIONS`
+## FAQ / Support / License
 
-### Request Extras
+- Read the [FAQ](FAQ.md) for buyer-focused answers about requirements, licensing, automation, backups, and stability.
+- Use the GitHub issue tracker for product bugs and app behavior problems.
+- Use the Polar portal for billing, subscription, trial, and license-management support.
+- Use and distribution are governed by the bundled [EULA](EULA.md) and a valid Polar license.
 
-- `auth_token`
-- `request_id`
-- `package_name`
-- `enabled`
 
-### Result Broadcast
-
-- Action: `com.northmendo.processwarden.action.COMMAND_RESULT`
-
-### Result Extras
-
-- `request_id`
-- `command`
-- `status`
-- `message`
-- `package_name`
-
-## Localization Notes
-
-- English is the source locale.
-- App strings live under `app/src/main/res/values-xx/strings.xml`.
-- Localized EULA assets live under `app/src/main/res/raw-xx/process_warden_eula.txt`.
-- Translation workflow notes live in [docs/translations.md](docs/translations.md).
-
-## License
-
-Process Warden is a commercial product. Use and distribution are governed by the bundled [EULA](EULA.md) and a valid Polar license.
