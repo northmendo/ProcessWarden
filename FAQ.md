@@ -40,7 +40,7 @@ It temporarily exempts selected restricted apps for a defined window, then resto
 The app is commercial and license-gated. You buy or trial it through Polar, then activate the device with your license key. There is also offline grace after a successful validation.
 
 ## Can I move my license to another device?
-Yes, but device limits depend on the tier you bought. You can also deactivate a device from inside the app before moving to a new one.
+Yes, but device limits depend on the tier you bought. If you have already used all of your activation slots, deauthorize an old device first in the Polar customer portal, then activate the new one: https://polar.sh/northmendo-tech-services/portal
 
 ## Does the app need internet access?
 Yes, for license validation, periodic revalidation, Polar portal access to get your keys, and OTA update checks. Offline use works for up to 14 days before the app needs to check whether your license is still valid.
