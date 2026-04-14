@@ -17,9 +17,9 @@ Your license is tied to a specific hardware activation limit based on the tier y
 You are solely responsible for managing your active devices via the Customer Portal. Sharing your License Key with unauthorized third parties or attempting to bypass the hardware limits is strictly prohibited and will result in the immediate revocation of your license without a refund.
 
 ## 3. Definition of "Lifetime" License
-If you purchase the "Legacy (Lifetime)" tier, the term "Lifetime" refers exclusively to the active developmental lifecycle of the Process Warden application, **not the lifetime of the purchaser**.
+If you purchase the "Legacy (Lifetime)" tier, the term "Lifetime" refers exclusively to the active developmental lifecycle of the Process Warden application, **not the lifetime of the purchaser**. 
 
-A Lifetime license guarantees you access to the Application and all updates for as long as we continue to actively maintain, support, and distribute Process Warden. In the event that Process Warden is permanently discontinued or retired from service, this license will terminate.
+A Lifetime license guarantees you access to the Application and all updates for as long as we continue to actively maintain, support, and distribute Process Warden. In the event that Process Warden is permanently discontinued or retired from service, this license will terminate. 
 
 ## 4. Restrictions
 You agree not to, and you will not permit others to:
@@ -38,4 +38,4 @@ This Agreement is effective until terminated by you or us. We may suspend or ter
 The Application is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, whether express or implied. We do not warrant that the Application will be error-free, uninterrupted, or perfectly compatible with all future hardware or operating system updates.
 
 ## 8. Contact Information
-Billing, trial, subscription, and device-management support is handled through the Polar customer portal for Northmendo Tech Services.
+Billing, trial, subscription, and device-management support is handled through the Polar customer portal for Northmendo Tech Services. Product issues can also be reported through the current GitHub repository issue tracker.
