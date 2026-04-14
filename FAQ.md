@@ -24,6 +24,9 @@ When a launcher or gesture invokes the shortcut, Android often puts the launcher
 ## What can the app kill?
 You can kill a single app, multiple selected apps, the current foreground app, or a configured background-kill set. The app also supports widget, tile, and automation-based kill flows.
 
+## Does selection mode reorder the list?
+No. When you select apps, the list keeps its current order so it is easier to compare entries. Search also stays available while multi-select is active.
+
 ## Can it run automatically?
 Yes. You can run periodic cleanup, screen-off cleanup, and RAM-threshold-gated cleanup. The app can also restore its automation state after boot.
 
@@ -56,6 +59,12 @@ Yes, if you enable the external automation API in Settings and supply the correc
 
 ## What if a kill action fails?
 The usual reasons are missing Root/Shizuku permission, an invalid package target, or a device state that prevents shell execution. The app shows a message instead of pretending the action succeeded.
+
+## How do I learn the app?
+The first launch can show a short App Tour. You can reopen it later from `Settings` under `Help & Links`, alongside the written `How Process Warden works` guide.
+
+## Why does back not immediately exit the app?
+Process Warden routes back to `Apps` first and then asks for a few root back presses before it exits. That is deliberate, so you do not leave the app by accident.
 
 ## Is this app safe to use on system apps?
 You can expose system apps in the UI, but killing or restricting the wrong system component can break notifications, widgets, keyboards, VPNs, accessibility services, or device stability. Use it carefully.
